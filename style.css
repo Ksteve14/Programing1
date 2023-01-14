@@ -1,0 +1,67 @@
+/* css style sheet for programing */ 	
+header {
+    background-color: #EAE899;
+    border-radius: 20px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    height: 70px;
+    font-size:60px;
+    font-family:sans-serif;
+    color:grey;
+    text-align: center;
+  }
+ 
+ body{
+	background-color:#c3EA99;
+}
+
+#content{
+	margin:auto;
+	height:340px;
+	width:890px;
+    margin-top: 20px;
+    background-color:#99EAE8; 
+    border-radius: 50px;
+    border: 2px solid #1f85de;
+    padding: 20px;
+    font-family:sans-serif;
+    color:grey;
+    text-align: center;
+  }
+
+
+#box{
+    margin:auto;
+	height:140px;
+	width:890px;
+    margin-top: 20px;
+    background-color:#d7b7f5; 
+    border-radius: 50px;
+    border: 2px solid #8003f4;
+    padding: 20px;
+    margin-bottom:1rem;
+    font-family:sans-serif;
+    color:grey;
+    text-align: center;
+  }
+
+
+
+
+#footer {
+    background-color: #EAE899;
+    border-radius: 20px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+    height: 70px;
+    font-size:60px;
+    font-family:sans-serif;
+    color:grey;
+    text-align: center; 
+  }
+
+
+
+
+
+
