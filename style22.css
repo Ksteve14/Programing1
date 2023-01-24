@@ -1,0 +1,49 @@
+	
+header {
+    background-color: #051D59;
+    border-radius: 20px;
+    border: 2px solid silver;
+    padding: 20px;
+    height: 70px;
+    font-size:60px;
+    font-family:Forest;
+    color:whitesmoke;
+    text-align: center;
+  }
+ 
+ body{
+	background-color:#054759;
+}
+
+#content{
+	margin:auto;
+	height:340px;
+	width:890px;
+    margin-top: 20px;
+    background-color:#055941; 
+    border-radius: 50px;
+    border: 2px solid lightgreen;
+    padding: 20px;
+    color:whitesmoke;
+    text-align: center;
+    font-family:Kefa;
+    font-size:23px;
+  }
+
+  img {
+    border-radius: 30%;
+  }
+
+  
+#footer {
+    background-color:  #051D59;
+    border-radius: 20px;
+    border: 2px  solid silver;
+    padding: 20px;
+    height: 70px;
+    font-size:60px;
+    font-family:Forest;
+    color:whitesmoke;
+    text-align: center; 
+  }
+
