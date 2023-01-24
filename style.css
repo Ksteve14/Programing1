@@ -24,14 +24,11 @@ header {
     border-radius: 50px;
     border: 2px solid #1f85de;
     padding: 20px;
-    font-size:20px;
     font-family:sans-serif;
     color:grey;
     text-align: center;
   }
-  img {
-    border-radius: 30%;
-  }
+
 
 #box{
     margin:auto;
@@ -46,32 +43,11 @@ header {
     font-family:sans-serif;
     color:grey;
     text-align: center;
+    flex-flow: column wrap;
   }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border: 2px solid #8003f4;
-    padding: 20px;
-    border-radius: 05%;
-    
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-  }
+
+
 
 #footer {
     background-color: #EAE899;
