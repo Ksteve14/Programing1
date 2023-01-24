@@ -43,6 +43,7 @@ header {
     font-family:sans-serif;
     color:grey;
     text-align: center;
+    flex-flow: column wrap;
   }
 
 
