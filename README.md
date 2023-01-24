@@ -1,2 +1,2 @@
-# Programing1
-Web Programing 1
+# Programming1
+Web Programming 1
