@@ -1,0 +1,90 @@
+	
+header {
+    background-color: #051D59;
+    border-radius: 20px;
+    border: 2px solid silver;
+    padding: 20px;
+    font-size:60px;
+    font-family:Forest;
+    color:whitesmoke;
+    text-align: center;
+  }
+ 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding:30;
+    overflow: hidden;
+    background-color: #051D59;
+    border-radius: 20px;
+    border: 2px solid silver;
+    font-family:Forest;
+    color:whitesmoke;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+ body{
+	background-color:#054759;
+}
+
+#content{
+	margin:auto;
+	height:340px;
+	width:890px;
+    margin-top: 20px;
+    background-color:#055941; 
+    border-radius: 50px;
+    border: 2px solid lightgreen;
+    padding: 20px;
+    color:whitesmoke;
+    text-align: center;
+    font-family:Kefa;
+    font-size:23px;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .col {
+      padding: 50px;
+      margin: 20px;
+      height: 240px;
+      width:340px;
+      background-color:#055941; 
+      border-radius: 50px;
+      border: 2px solid lightgreen;
+      color:whitesmoke;
+      text-align: center;
+      font-family:Kefa;
+  }
+
+  img {
+    border-radius: 30%;
+  }
+
+  
+#footer {
+    background-color:  #051D59;
+    border-radius: 20px;
+    border: 2px  solid silver;
+    font-size:60px;
+    font-family:Forest;
+    color:whitesmoke;
+    text-align: center;
+  }
+
