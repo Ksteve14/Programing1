@@ -1,0 +1,110 @@
+header {
+    background-color: #1f47de;
+    padding: 20px;
+    font-size:60px;
+    font-family:Forest;
+    color:whitesmoke;
+    text-align: center;
+  }
+  body{
+	background-color:#72b5f0;
+  }
+  
+  .icon-bar a {
+    position: absolute;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: whitesmoke;
+    font-size: 50px;
+    border-radius: 50%;
+    background: #2D86FF;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    content: "\f007";
+    font-family: 'Font Awesome\ 6.3.0 Free';
+    font-weight: 900;
+    text-decoration: none;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #051D3B;
+    opacity:1;
+    
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  #container1{
+	position:absolute;
+    padding: 20px;
+	height:50px;
+	top:80px;
+    font-size:20px;
+    font-family:Kefa;
+    color:whitesmoke;
+    float: left;
+    width: 20%;
+}
+
+#container2{
+	position:absolute;
+	height:25px;
+    right:98px;
+	top:260px;
+    padding: 20px;
+    width: 20%;
+    float:right;
+}
+img{
+border-radius: 90%;
+}
+
+#container3{
+    position:absolute;
+	height:20px;
+	right:220px;
+	top:260px;
+    width:20%;
+    float:right;
+}
+
+#container4{
+    position:absolute;
+	height:20px;
+	width:20%;
+	right:240px;
+	top:400px;
+    float:right;
+}
+
+#container5{
+    position:absolute;
+	height:50px;
+	width:20%;
+	right:200px;
+	top:550px;
+    float:right;
+}
+
+@media screen and (max-width: 800px) {
+    #container1,#container2,#container3,#container4,#container5
+    width: 100%;
+}
