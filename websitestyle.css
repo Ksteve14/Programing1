@@ -6,7 +6,7 @@ header {
     color:whitesmoke;
     text-align: center;
   }
-  @media (min-width: 844px) {
+  @media (min-width: 850px) {
     header {
         width:100%;
     }
@@ -14,7 +14,7 @@ header {
   body{
 	background-color:#72b5f0;
   }
-  @media (min-width: 844px){
+  @media (min-width: 850px){
     body {background-color:#72b5f0;
 
     }
@@ -61,7 +61,8 @@ header {
     transition: .5s ease;
     background-color: #008CBA;
   }
-@media (min-width: 844px;){
+  
+@media (min-width: 850px){
     .topnav {
         overflow: hidden;
         background-color: #333;
@@ -161,3 +162,20 @@ border-radius: 90%;
     border-radius: 10px;
   }
   
+  .mobileShow { display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+
+  .mobileHide { display: inline; }
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+     .mobileHide { display: none;}
+  }
