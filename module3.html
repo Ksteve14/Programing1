@@ -4,9 +4,20 @@
     <title> The Single Brain Cell Society </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
     <link rel="stylesheet" type="text/css" href="websitestyle.css">
+    <style type="text/css">
+        .mobileShow { display: none;}
+      
+        /* Smartphone Portrait and Landscape */
+        @media only screen
+          and (min-device-width : 320px)
+          and (max-device-width : 480px){ 
+            .mobileShow {display: inline;}
+        }
+      </style>
     <header> The Single Brain Cell Society</header>
     </head>
     <body>
+        <div class="mobileHide">
         <div class="icon-bar">
             <a href="#"><i class="fa-solid fa-play"></i></a> 
             <a href="#"><i class="fa-solid fa-dollar-sign"></i></a> 
@@ -27,8 +38,7 @@
                 opportunities to leave you feeling ready to take on your 
                 responsibilities with ease.
             </p>
-        </div>
-
+        </div> 
         <div id="container2">
 
             <img src="brain2.jpg" height="320" width="320" media="(min-width: 850px)";></src>
@@ -45,19 +55,10 @@
         <div id="container5">
             <img src="succeed.jpg" height="120" width="120" media="(min-width: 850px)";></src>
         </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="mobileShow">
+        div class="topnav"></div>
+    </div>
     </body>
     </html>
