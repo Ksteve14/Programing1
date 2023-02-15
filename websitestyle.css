@@ -6,8 +6,18 @@ header {
     color:whitesmoke;
     text-align: center;
   }
+  @media (min-width: 844px) {
+    header {
+        width:100%;
+    }
+  }
   body{
 	background-color:#72b5f0;
+  }
+  @media (min-width: 844px){
+    body {background-color:#72b5f0;
+
+    }
   }
   
   .icon-bar a {
@@ -51,6 +61,43 @@ header {
     transition: .5s ease;
     background-color: #008CBA;
   }
+@media (min-width: 844px;){
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+        color: white;
+      }
+}
+    
 
   #container1{
 	position:absolute;
@@ -104,7 +151,13 @@ border-radius: 90%;
     float:right;
 }
 
-@media screen and (max-width: 800px) {
-    #container1,#container2,#container3,#container4,#container5
-    width: 100%;
-}
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
