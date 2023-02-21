@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+<title>Module 4</title>
+<link rel="stylesheet" type="text/css" href="style4.css">
+<button type="button" onclick="backGroundColorChange()">Set background color</button>
+<header>Have a Heart and Do Your Part to Protect Sharks</header>
+</head>
+<body>
+    <body>
+        
+        <div class="row">
+        <div class="col">
+           <h3> Sharks Reduce Carbon</h3>
+            <p>
+                Deep-sea sharks help recycle carbon and remove it from the equation by eating and scavenging dead animals on the bottom of the ocean.
+                 Without these sharks, that carbon would rise to the surface. 
+                It's estimated that sharks remove up to half of the 
+                manufactured carbon in the atmosphere.</p>
+            <p> Source: Oceans Research</p>
+        </div>
+        <div class="col">
+        <img src="shark.jpeg"
+        style="width:230px; height:240px";></img>
+        </div>
+        <div class="col">
+            <h3>Sharks Advancing Human Medicine</h3>
+            <p>Australian researchers have developed a drug that mimics part of a shark's
+            immune system to treat idiopathic pulmonary fibrosis (IPF).5 
+            The drug, called AD-114, was inspired by an antibody found in shark blood, 
+            specifically in the Wobbegong shark.</p>
+            <p> Source: Pharmacy Times</p>
+        </div></div>
+    
+        <div id="content">
+            <div id="img2">
+                <img src="finning.jpeg"
+                style="width:230px; height:240px";></img>
+            </div>
+            <h2> Say No to Shark Fin Soup and End Shark Finning!</h2>
+            <p> Shark fin soup has been a Chinese delicacy for thousands of years. The dish has become
+                a symbol of wealth and served during special occasions. However, the dish has a cruel 
+                backstory. Fisherman catch sharks to harvest their fins then dump them back into the ocean,
+                unable to swim and dying a slow cruel death. Not only is the practice cruel, it also can 
+                severely impact our ecosystem.</p>
+                <p> Source: South Carolina Aquarium</p>
+        </div>
+    <!--JavaScript Portion of Assignment-->
+    <script>
+    /* declaration of variables*/
+    var variable_1, variable_2, variable_3,variable_4,variable_5,variable_6,variable_7;
+
+    /* variable assignment*/
+    /*NUMBERS*/
+
+    variable_1=1;//this will open a dialog containing "4"//
+    variable_2=2;//this will open a dialog containing "8"//
+    variable_3=3;//this will open a dialog containing "16"//
+
+    variable_4=variable_3+variable_3;//variable 4 is equal to "6"//
+
+    /*STRINGS*/
+    variable_6="great white shark"; 
+    variable_7="whale shark";
+    
+    /* Make a decision with if and else */
+  
+    function backGroundColorChange() {
+
+/*
+Input something from the user and put it into the variable.
+*/
+colorChoiceVar = Number(prompt("Which shark do you like more? Type the number 1 for tiger shark or the number 2 for hammerhead to see what happens"));
+/*
+*/
+if (colorChoiceVar == 1)
+{
+/* It was a 1, so the boolean is true. We execute this code. */
+alert("It was 1, so we will change the background color.")
+document.body.style.backgroundColor = "#0F6CAA"; /* body color is dark blue */
+}
+else
+{
+/* It was NOT a 1, so the boolean is false. We execute this other code. */
+alert("It was not 1, so we shall see what happens.")
+document.body.style.backgroundColor = "#1DEBA3";/* body color is pink */
+}
+    }
+		
+
+
+
+    </script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="footer"> Remember, sharks are our friends, not our enemy.</div>
+
+</body>
+</html>
