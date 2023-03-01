@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+<title> JavaScript Practice </title>
+<link rel="stylesheet" type="text/css" href="scriptpractice.css">
+<script type="text/javascript"> 
+
+/* Customer Order Creation*/
+
+function donut_choice(){
+    
+    var OrderString;
+    
+    OrderString=" You ordered " + document.delicious.size.value + " of our " + document.delicious.type.value + " donuts with " + document.delicious.fillingtopping.value;
+
+    document.delicious.YourOrder.value = OrderString;
+    
+    writeText( "Your price is $" + ComputePrice(), "price");
+    writeText(OrderString,"order");
+}
+
+/*Calculate the price of the donut order and it will produce a number*/
+
+function ComputePrice()
+{
+
+    var price;
+        if (document.delicious.size.value=="2 donuts")
+
+        {
+            price= 3.49;
+            
+            if(document.delicious.type.value !="plain")
+            price= price + .50;
+            
+            if(document.delicious.fillingtopping.value != "plain")
+            price= price + 1.00;
+
+        }
+
+        else if (document.delicious.size.value=="half dozen")
+
+        {
+            price= 5.99;
+            
+            if(document.delicious.type.value != "plain")
+            price= price + 1.00;
+
+            if(document.delicious.fillingtopping.value != "plain")
+            price= price + 2.00;
+        }
+
+        else if (document.delicious.size.value=="dozen")
+        {
+            price= 9.99;
+
+            if(document.delicious.type.value != "plain")
+            price= price + 2.00;
+
+            if(document.delicious.fillingtopping.value != "plain")
+            price= price + 3.00;
+
+        }
+
+        return price.tofixed(2);
+
+}
+/*Information below is sent to HTML elements to create parameters*/
+
+function writeText(txt, destination)
+{document.getElementById(destination).innerHTML= txt;
+}
+</script>
+
+<header><h1>Doug's Donuts</h1></header>
+</head>
+
+<body>
+    <form name="delicious" onSubmit="donut_choice();">
+<!--This is the table for customers to make their selection of quantity, type, and filling/toppings-->
+   <div class="button">
+    <table style="width:55%">
+   
+    <tr>
+
+        <h2>
+            <td>Size</td>
+            <td>Type</td>
+            <td>Filling or Topping</td>
+        </h2>
+    </tr>
+
+    <td>
+        <select name="size">
+            <option value="two donuts"> two donuts</option>
+            <option value="half dozen"> half dozen</option>
+            <option value="dozen"> dozen</option>
+        </select>
+    </td>
+
+    <td>
+        <select name="type">
+            <option value="glazed"> glazed</option>
+            <option value="traditional filled"> traditional filled</option>
+            <option value="powder"> powder</option>
+            <option value="chocolate cake"> chocolate cake</option>
+            <option value="vanilla cake"> vanilla cake</option>
+            <option value="plain"> plain</option>
+        </select>
+    </td>
+
+    <td>
+        <select name="fillingtopping">
+            <option value="raspberry jelly"> raspberry jelly</option>
+            <option value="vanilla cream"> vanilla cream</option>
+            <option value="chocolate cream"> chocolate cream</option>
+            <option value="banoffee cream"> banoffee cream</option>
+            <option value="lemon glaze"> lemon glaze</option>
+            <option value="rainbow sprinkles"> rainbow sprinkles</option>
+            <option value="traditional glaze"> traditional glaze</option>
+            <option value="strawberry glaze"> strawberry glaze</option>
+             <option value="plain"> plain</option>
+        </select>
+    </td>
+
+</table>
+<p id="price">Your Price</p>
+<p id="order">Your Order</p>
+<TEXTAREA NAME="YourOrder" rows="2" cols=50 wrap=virtual> Special notes</TEXTAREA>
+<br>
+<input type="button" onclick="donut_choice();" value="order"></input>
+</div>
+</form>
+
+
+
+<div class="container">
+    <img src="doug22.png" height="300px" width="300px"></src>
+    </div>
+   <br>
+   <br>
+    <div id=footer>
+        <p>Address: 477 Barky Boy Way, Tampa Florida</p>
+        </div>
+</body>
+</html>
