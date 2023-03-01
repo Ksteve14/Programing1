@@ -5,69 +5,45 @@
 <script type="text/javascript"> 
 
 /* Customer Order Creation*/
-
-function donut_choice(){
-    
-    var OrderString;
-    
-    OrderString=" You ordered " + document.delicious.size.value + " of our " + document.delicious.type.value + " donuts with " + document.delicious.fillingtopping.value;
-
-    document.delicious.YourOrder.value = OrderString;
-    
-    writeText( "Your price is $" + ComputePrice(), "price");
-    writeText(OrderString,"order");
+function donut_choice() {
+  var OrderString;
+  OrderString = " You ordered " + document.delicious.size.value + " of our " + document.delicious.type.value + " donuts with " + document.delicious.fillingtopping.value;
+  document.delicious.YourOrder.value = OrderString;
+  writeText("Your price is $" + ComputePrice(), "price");
+ do {
+	 writeText(OrderString, "order");
+} while (condition);
 }
 
 /*Calculate the price of the donut order and it will produce a number*/
+function ComputePrice(price)
+ {console.log(document.delicious.type.value);
+  var price;
+  if (document.delicious.size.value == "two donuts") {
+    price = 3.49;
+    if (document.delicious.type.value != "plain")
+      price = price + .50;
+    if (document.delicious.fillingtopping.value != "plain")
+      price = price + 1.00;
+  } else if (document.delicious.size.value == "half dozen") {
+    price = 5.99;
+    if (document.delicious.type.value != "plain")
+      price = price + 1.00;
+    if (document.delicious.fillingtopping.value != "plain")
+      price = price + 2.00;
+  } else if (document.delicious.size.value == "dozen") {
+    price = 9.99;
+    if (document.delicious.type.value != "plain")
+      price = price + 2.00;
+    if (document.delicious.fillingtopping.value != "plain")
+      price = price + 3.00;
+  }
 
-function ComputePrice()
-{
-
-    var price;
-        if (document.delicious.size.value=="2 donuts")
-
-        {
-            price= 3.49;
-            
-            if(document.delicious.type.value !="plain")
-            price= price + .50;
-            
-            if(document.delicious.fillingtopping.value != "plain")
-            price= price + 1.00;
-
-        }
-
-        else if (document.delicious.size.value=="half dozen")
-
-        {
-            price= 5.99;
-            
-            if(document.delicious.type.value != "plain")
-            price= price + 1.00;
-
-            if(document.delicious.fillingtopping.value != "plain")
-            price= price + 2.00;
-        }
-
-        else if (document.delicious.size.value=="dozen")
-        {
-            price= 9.99;
-
-            if(document.delicious.type.value != "plain")
-            price= price + 2.00;
-
-            if(document.delicious.fillingtopping.value != "plain")
-            price= price + 3.00;
-
-        }
-
-        return price.tofixed(2);
-
+  return price.toFixed(2);
 }
-/*Information below is sent to HTML elements to create parameters*/
 
-function writeText(txt, destination)
-{document.getElementById(destination).innerHTML= txt;
+function writeText(txt, destination) {
+  document.getElementById(destination).innerHTML = txt;
 }
 </script>
 
@@ -79,7 +55,6 @@ function writeText(txt, destination)
 <!--This is the table for customers to make their selection of quantity, type, and filling/toppings-->
    <div class="button">
     <table style="width:55%">
-   
     <tr>
 
         <h2>
@@ -123,11 +98,12 @@ function writeText(txt, destination)
     </td>
 
 </table>
+
 <p id="price">Your Price</p>
 <p id="order">Your Order</p>
 <TEXTAREA NAME="YourOrder" rows="2" cols=50 wrap=virtual> Special notes</TEXTAREA>
 <br>
-<input type="button" onclick="donut_choice();" value="order"></input>
+<input type="button" onclick="donut_choice(); ComputePrice();"" value="order" name="feedback"></input>
 </div>
 </form>
 
