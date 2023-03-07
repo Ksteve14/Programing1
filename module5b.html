@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+<title>Personal Training Information Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="module5b.css">
+<script type="text/javascript">
+/*When function is called, the user will see what it was they selected*/
+function experience_info(){
+
+    document.getElementById("ExperienceString").innerHTML =
+    
+    var ExperienceString= {"rarely, 1-2 times a week, 3-5 times a week,"};
+    
+    ExperienceString="According to your input, you exercise, everyday, yes, no " + document.lifting.exercise.value + ". You indicated" + document.lifting.experience.value + " to personal training experience ";
+
+    document.lifting.fitness.experience.value = ExperienceString;
+
+    writeText(ExperienceString,"fitness");
+}
+
+
+/*Information below is sent to HTML elements to create parameters*/
+
+function writeText(txt, destination)
+{document.getElementById(destination).innerHTML= txt;
+}
+
+
+</script>
+</head>
+<header><h1>Tenace Fitness</h1>
+    <h3> Dépassez votre Limite</h3></header>
+<body>
+
+<!--Potential clients will fill in their name, gender, age, email address, and phone number. If they make a mistake
+they are able to rest it to try again.-->
+<div id="container">
+    <h2><u> General Information</u></h2>
+        <form action="signup.html" method="post" id="signup">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name"/>
+
+        <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" placeholder="Enter your preferred gender"/>
+          
+
+        <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age"/>
+         
+
+        <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email address"/>
+           
+
+        <label for="phone number">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number"/>
+            <br>
+            <button style="width:15%">
+
+            <input type="reset">
+            </button>
+          
+
+     <br>
+
+     <!--Clients share their experience with exercise and select how often they do it. This will be in a drop-down
+        menu.-->
+
+     <form name="lifting" onSubmit="experience_info();">
+   
+        <label for="exercise">How often do you exercise?</label>
+        <select name="exercise">
+            <option value="rarely">rarely</option>
+            <option value="1-2 times a week">1-2 times a week</option>
+            <option value="3-5 times a week">3-5 times a week</option>
+            <option value="everyday">everyday</option>
+        </select>
+
+     <br>
+
+        <label for="fitness">Have you worked with a personal trainer before?</label>
+        <select name="fitness">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        <p id="fitness">Your Selection</p>
+        <input type="button" onclick="experience_info();" value="fitness">
+       </input>
+     </form>
+     
+
+     <br>
+<!--Clients will select from a dropdown list what type of training program they are interested in.-->
+     <form action="/action_page.php">
+        <label for="goals">What is your personal training workout goal?</label>
+        <select id="goals" name="goals">
+            <option value="weight loss">weight loss</option>
+            <option value="toning/muscle definition">toning/muscle definition</option>
+            <option value="athletic event or sports strength and conditioning">athletic event or sports strength and conditioning</option>
+            <option value="body building">body building</option>
+        </select>
+     </form>
+     
+            <br>
+    </form>
+<!--The client decides what day and time period is a good time to schedule the first consultation. This information is presented in a drop-down menu.-->
+    <table style="width:55%">
+        <label for="meeting">When are you available for your first consultation?</label>
+   
+        <tr>
+            
+            <h2>
+                <td>Day</td>
+                <td>Time of Day</td>
+            </h2>
+        </tr>
+    
+        <td>
+            <select name="day">
+                <option value="Monday"> Monday</option>
+                <option value="Tuesday"> Tuesday</option>
+                <option value="Wednesday"> Wednesday</option>
+                <option value="Thursday"> Thursday</option>
+                <option value="Friday"> Friday</option>
+                <option value="Saturday"> Saturday</option>
+                <option value="Sunday"> Sunday</option>
+            </select>
+        </td>
+    
+        <td>
+            <select name="time">
+                <option value="Morning"> Morning</option>
+                <option value="Afternoon"> Afternoon</option>
+                <option value="Evening"> Evening</option>
+            </select>
+            <button type="submit">Submit</button>
+        </td>
+    </form>
+
+    </div>
+</body>
+</html>
+
