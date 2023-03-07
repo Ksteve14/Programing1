@@ -1,0 +1,38 @@
+/** The header is black with solid white font coloring. The header has a light gray border that matches 
+the interior of the body**/
+
+header{
+    background-color: black;
+    width:100%;
+    text-align: left;
+    font-family:COPPERPLATE;
+    color:white;
+    position:relative;
+    border:4px solid #504d4a;
+    padding:5px;
+}
+
+body{
+    background-color:black;
+}
+
+/** The input section is applied to the general information portion of the form**/
+input {
+    width: 100%;
+  }
+/** I want the content to be placed towards the left side. In the future I'd like to add graphics**/
+
+/** The body is a light gray with a goldish-yellow border**/
+#container {
+    position: relative;
+    color: #c9c2b9;
+    text-align: left;
+    font-size: 16px;
+    font-family:COPPERPLATE;
+    background-color:  #504d4a;
+    border:9px solid #ffb826;
+    padding:20px;
+    height:100%;
+    width:70%;
+  }
+
