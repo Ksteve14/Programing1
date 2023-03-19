@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="utf-8">
+<title>Module 6</title>
+<link rel="stylesheet" type="text/css" href="style6.css">
+<script type="text/javascript">
+   
+   var star1={
+        type:"advice",
+        state:"friendship",
+        state2:"happiness",
+
+        describeStar: function()
+        {
+            return("You wished for " + this.type + " on the importance of " + this.state + ". Having a small group of friends that allow you to be true to yourself will result in " +this.state2)
+        }
+        
+    };
+
+    var star2={
+        type:"wisdom",
+        state:"relationships",
+        state2:"honest",
+
+        describeStar2: function()
+        {
+            return("You requested some " + this.type + " about love in romantic " + this.state + ". Be" + this.state2 + " with your partner. This can help you grow as a couple and avoid conflict")
+        }
+        
+    };
+
+    var star3={
+        type:"mental health",
+        state:"priority",
+        state2:"pastime activities",
+
+        describeStar3: function()
+        {
+            return("You must make your " + this.type + " a " + this.state + ". Participate in your favorite " + this.state2)
+        }
+    };
+
+    var star4={
+        type:"compare",
+        state:"pace",
+        state2:"competition",
+
+        describeStar4: function()
+        {
+            return("Don't " + this.type + " your life to those around you. Go at your own " + this.state + " and remember, life achievements are not a " + this.state2)
+        }
+    };
+
+</script>
+</head>
+<body>
+
+    <div class="container1">
+    <div class="starfloating1">
+        <h3 id="one"> </h3>
+        <button onclick="document.getElementById('one').innerHTML = star1.describeStar()">
+        <img src="star.png" style=  "height: 152px; width: 100px;">
+    </button>
+    </div>
+    </div>
+
+    <div class="container2">
+    <div class="starfloating2">
+        <h3 id="two"> </h3>
+        <button onclick="document.getElementById('two').innerHTML = star2.describeStar2()">
+        <img src="star.png" style=  "height: 152px; width: 100px;">
+    </button>
+    </div>
+    </div>
+
+    <div class="container5">
+    <div class="floating">
+        <img src="bubble.png" style=  "height: 490px; width: 350px;">
+    </div>
+    </div>
+   
+     <div class="container3">
+     <div class="starfloating3">
+        <h3 id="three"> </h3>
+        <button onclick="document.getElementById('three').innerHTML = star3.describeStar3()">
+        <img src="star.png" style=  "height: 152px; width: 100px;">
+         </button>
+    </div>
+    </div>
+
+    <div class="container4">
+        <div class="starfloating4">
+            <h3 id="four"> </h3>
+            <button onclick="document.getElementById('four').innerHTML = star4.describeStar4()">
+            <img src="star.png" style=  "height: 152px; width: 100px;">
+        </button>
+        </div>
+        </div>
+   
+</body>
+</html>
