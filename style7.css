@@ -28,16 +28,26 @@ img{
     float:right;
 }
 
-.button{
-    background-color:#D95019;
-    color:white;
-    font-family:OmnesCyrillic;
-    border-radius: 10px;
-    text-align: center;
-    display:inline-block;
 
-}
 
 h3{
     display:block
 }
+input[type=button], input[type=submit], input[type=reset] {
+    background-color:#D95019;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family:OmnesCyrillic;
+    height:200px;
+    width:200px;
+    margin-left:120px;
+}
+input, label {
+    font-size: 90px;
+    font-family:OmnesCyrillic;
+    color: white;
+}
+
