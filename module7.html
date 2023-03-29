@@ -1,52 +1,60 @@
 <!DOCTYPE html>
+
 <head>
- <meta charset="utf-8">
-<title>Module 7</title>
-<link rel="stylesheet" type="text/css" href="style7.css">
-<header> <img src="goose.png" height="190" width="190"></img><p>Space Goose Gaming Depot</p>     
-</header>
-<script type="text/javascript">
+   <meta charset="utf-8">
+   <title>Module 7</title>
+   <link rel="stylesheet" type="text/css" href="style7.css">
+   <header> <img src="goose.png" height="190" width="190"></img>
+      <p>Space Goose Gaming Depot</p>
+   </header>
+   <script type="text/javascript">
 
-/* this is my constructor example that features video game consoles, game genres, and accessories to purchase */
-    function gameProducts (gamingsystem, gamegenre, gameaccessory){
-        this.console = gamingsystem;
-        this.genre = gamegenre; 
-        this.accessory = gameaccessory;  
-          }
+      /* this is my constructor example that features video game consoles, game genres, and accessories to purchase */
+      function gameProducts(gamingsystem, gamegenre, gameaccessory) {
+         this.console = gamingsystem;
+         this.genre = gamegenre;
+         this.accessory = gameaccessory;
 
-          /*when you click on the button, this function will appear. Each button features a gaming brand and what hot deals are available*/
-    this.writegameProducts = function (){
-     
-     
-        var str = "Are you interested in purchasing a " + this.console + " ? " + "Look no further, we feature a wide range of their latest and vintage products. Stop by to purchase or trade in a video game. If you trade in a video game, you can get a 20% discount on the purchase of their newest game,  " +this.genre+ ". We are also offering 45% your entire purchase if you buy a new  " + this.accessory;
-     
-        writeText(str, "products");                                             
-    }
-     
-    /* This will write some text out to an html element. The text to write and the id of the html
-element to write to are parameters.
-*/
-     function writeText(txt, destination){
-     document.getElementById(destination).innerHTML=txt;
-           } 
-                
-         /* gaming variables */
-        var Nintendo = new gameProducts ("Nintendo Switch","Super Mario Party","Nintendo Switch Lite case");
-        var PlayStation = new gameProducts("PS5","Hogwarts Legacy","DualSense™ Edge Wireless Controller");
-        var Xbox = new gameProducts("Xbox Series X","NBA 2K23","Gamevice Flex for Android");
-        var Steam = new gameProducts("Steam Deck","Apex Legends","JSAUX Steam Deck Dock");
-</script>
+         this.writegameProducts = function () {
+
+
+            var str = "Are you interested in purchasing a " + this.console + " ? " + "Look no further, we feature a wide range of their latest and vintage products. Stop by to purchase or trade in a video game. If you trade in a video game, you can get a 20% discount on the purchase of their newest game,  " + this.genre + ". We are also offering 45% your entire purchase if you buy a new  " + this.accessory;
+
+            writeText(str, "products");
+         }
+      }
+
+      /*when you click on the button, this function will appear. Each button features a gaming brand and what hot deals are available*/
+
+
+      /* This will write some text out to an html element. The text to write and the id of the html
+  element to write to are parameters.
+  */
+      function writeText(txt, destination) {
+         document.getElementById(destination).innerHTML = txt;
+      }
+
+      /* gaming variables */
+      var Nintendo = new gameProducts("Nintendo Switch", "Super Mario Party", "Nintendo Switch Lite case");
+      var PlayStation = new gameProducts("PS5", "Hogwarts Legacy", "DualSense™ Edge Wireless Controller");
+      var Xbox = new gameProducts("Xbox Series X", "NBA 2K23", "Gamevice Flex for Android");
+      var Steam = new gameProducts("Steam Deck", "Apex Legends", "JSAUX Steam Deck Dock");
+   </script>
 </head>
-<body>
-<div class="productinfo">
-<p>Current Deals and Steals!</p> </div>
 
-<button>
-<input type="button" onclick= "Nintendo.writegameProducts()"  value = "Nintendo" name="gameProducts"/>
-<input type="button" onclick= "PlayStation.writegameProducts();" value = "PlayStation" name="gameProducts"/>
-<input type="button" onclick= "Xbox.writegameProducts();"  value = "Xbox" name="gameProducts"/>
-<input type="button" onclick= "Steam.writeGameProducts();" value = "Steam"  name="gameProducts"/>
-</button>
+<body>
+   <div class="productinfo">
+      <p>Current Deals and Steals!</p>
+   </div>
+
+   <button>
+      <p id="products">
+      <input type="button" onclick="Nintendo.writegameProducts()" value="Nintendo" name="gameProducts" />
+      <input type="button" onclick="PlayStation.writegameProducts();" value="PlayStation" name="gameProducts" />
+      <input type="button" onclick="Xbox.writegameProducts();" value="Xbox" name="gameProducts" />
+      <input type="button" onclick="Steam.writegameProducts();" value="Steam" name="gameProducts" />
+   </button>
 
 </body>
+
 </html>
