@@ -1,0 +1,43 @@
+/* css style sheet for module 47*/ 	
+header{
+    background-color:#D95019;
+    color:white;
+    font-family:OmnesCyrillic;
+    border-radius: 10px;
+    font-size: 60px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+body{
+    background-color: #073C62;
+}
+
+.productinfo{
+    font-family:OmnesCyrillic;
+    text-align: center;
+    text-decoration: underline;
+    color:white;
+    font-size:50px;
+}
+
+
+img{
+    border-radius: 50%;
+    border: 2px solid white;
+    float:right;
+}
+
+.button{
+    background-color:#D95019;
+    color:white;
+    font-family:OmnesCyrillic;
+    border-radius: 10px;
+    text-align: center;
+    display:inline-block;
+
+}
+
+h3{
+    display:block
+}
