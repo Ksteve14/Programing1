@@ -9,9 +9,13 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.3.x/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.x/js/bootstrap.min.js"></script>
       <script type="text/javascript">
-        /*                       0                  1                      2      */
+      
+      /*These are my lesson variables*/
+      /*                       0                  1                      2      */
         var lessons = [ "Unclog a Drain", "Negotiating Your Salary", "Basic Sewing"];
         
+
+        /*This function shows the variabls above and allows the viewer to suggest new options or delete the featured options*/
         function showOPTION()
         {
            document.getElementById("example").innerHTML = "Here are the potential course options " + lessons; 
@@ -20,11 +24,11 @@
         
           function addcontent()
         {
-            //fifthGraders[fifthGraders.length] = prompt("Who is the new student");
+        /*Add new lesson ideas*/
             lessons.push(prompt("What kind of lessons are you interested in adding?"));
             showOPTION();        
         }
-        
+        /*remove lesson ideas*/
             function removecontent ()
         {
         
@@ -42,6 +46,7 @@
             <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
             <a href="#"><i class="fa-solid fa-question"></i></a> 
           </div>
+          <!--This container includes a brief description of the website-->
         <div id="container1">
             <p> Do you feel lost trying to understand or complete certain tasks like
                 paying taxes, applying for a credit card, or changing a flat tire?
@@ -58,6 +63,7 @@
             </p>
         </div> 
        
+         <!--This portion allows the viewer to add lesson ideas-->
         <div id="forminfo">
         <h2>We Want to Hear from You!</h2>
         <p>Our team has been busy brainstorming new tutorials to feature on our website. Check out our ideas and add to the list! You're also welcome to delete some of the options listed.</p>
