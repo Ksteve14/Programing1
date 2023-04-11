@@ -1,0 +1,42 @@
+/* css style sheet for module 9*/ 	
+header{
+    background-color:#EDAAAE;
+    color:white;
+    font-family:Copperplate;
+    border-radius: 10px;
+    font-size: 60px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+body{
+    background-color: #F6D5D6;
+}
+/*this is where the symptoms and information will appear*/
+#container {
+    margin-left:170px;
+    margin-top:30px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-family:Century;
+    background-color: #DF6A71;
+    border:2px solid white;
+    padding:20px;
+    height:100%;
+    width:70%;
+  }
+
+  h1{  
+    text-align: center;
+    color: white;
+    font-family:COPPERPLATE;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-family:COPPERPLATE;
+}
+
+
