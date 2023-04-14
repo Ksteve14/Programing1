@@ -1,0 +1,72 @@
+/* css style sheet for my Responsive Shell (Final Exam)*/ 	
+ 
+/*the image was designed in Adobe Illustrator but I may need to adjust the original sizing so that it is more clear on a webscreen size*/
+html{
+    background-image:url('bedroom1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+}
+
+
+
+header {
+    background-color: lemonchiffon;
+    border-radius: 20px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    height: 60px;
+    font-size:38px;
+    font-family:Barbieri Inline ;
+    color:tan;
+    text-align: center;
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding:20;
+    overflow: hidden;
+    background-color: lemonchiffon ;
+    border-radius: 20px;
+    border: 2px solid #73AD21;
+    font-family:Barbieri;
+    color:tan;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: tan;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:#73AD21 ;
+  }
+.container{
+  float:left;
+  margin-top:70px;
+  height: 280px;
+  width:320px;
+  background-color:#55DAD4; 
+  border-radius: 50px;
+  border: 2px solid#077873 ;
+  text-align: left;
+  font-family:Barbieri;
+  color:#077873;
+  font-size: 25;
+}
+
+h2{
+text-align: center;
+font-family:Barbieri;
+color:#077873;
+}
