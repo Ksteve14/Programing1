@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunscreen</title>
+<link rel="stylesheet" type="text/css" href="sun2.css">
+<header> Sun Protection</header>
+</head>
+<body>
+<!--Option to return to Index or go to other page-->
+ <ul>
+    <li><a href="responsiveshell.html"> Home </a></li>
+     <li><a href="">Alcohol Safety</a></li>
+    <li><a href="">Uber/Nighttime Navigation Tips</a></li>
+</ul>
+
+<!--contains digital avatar next to sunscreen bottles-->
+<div id="container">
+     <img src="sunscreen.png" height="360px" width="360px"></src>
+</div>
+
+ <!--YouTule link plays video demonstrating power of sunscreen-->    
+<div id="schoice">
+
+    <h2> How to Apply Sunscreen to Your Face</h2>
+    <iframe width="420" height="340" src="https://www.youtube.com/embed/yrs3_F5uzJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<!--accordion drops down to teach users about skin cancer risks, signs (needs to be added still), and how to treat sunburnsss-->
+<!--I may consider making these buttons instead of a drop down accordion. This may clear up space to make it look better-->
+
+<button class="accordion">Skin Cancer Statistics</button>
+
+<div class="panel">
+    <p>The Skin Cancer Foundation states that melanoma is the second MOST COMMON type of cancer diagnosed in 15-19 year olds and the most common form of cancer affecting young adults between the ages of 25-29.</p>
+  
+    <p> Sustaining just 5 sunburns as a teenager can make an adult 80% more likely to develop melanoma during their lifetime.</p>
+</div>
+
+<button class="accordion">Signs of Skin Cancer</button>
+
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Sunburn Care</button>
+
+<div class="panel">
+  <p>Go to your local pharmacy or convenient store to purchase alloe. If you don't have any, you can create a paste made from water and baking soda and apply it to the burn area to relieve some of the pain and heat.</p>
+  <p>Make sure to be drinking water and staying hydrated. The body tries to heal the burn by drawing moisture from other areas of the </p>
+</div>
+<!--Coding steps for accordion were found on W33schools but if I place the JavaScript in the head, the code won't work properly. I will try to adjust this-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
