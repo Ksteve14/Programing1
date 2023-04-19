@@ -1,0 +1,110 @@
+/* css style sheet for my Responsive Shell (Final Exam)*/ 	
+
+
+/*the header and content boxes will be in shades of orange*/
+header{
+    background-color: #FFC288;
+    border-radius: 20px;
+    border: 2px solid #ec9a3a;
+    padding: 20px;
+    height: 60px;
+    font-size:38px;
+    font-family:Barbieri Inline ;
+    color:white;
+    text-align: center;
+}
+
+/*navigation bar styling*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:20;
+    overflow: hidden;
+    background-color: #FFC288 ;
+    border-radius: 20px;
+    border: 2px solid #ec9a3a;
+    font-family:Barbieri;
+    color:white;
+
+  }
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:#FEA82F ;
+  }
+/*the body will be blue*/
+body{
+    background-color: #51C3DE;
+  }
+
+  #container{
+    position: absolute;
+    height:360px;
+    width: 360px;
+    bottom:0px;
+    right:0px;
+
+
+}
+
+#schoice{
+    position:absolute;
+    height:450px;
+    width:420px;
+    right:160px;
+    bottom:90px;
+    background-color:#FFC288;
+    border-radius: 20px;
+    border: 2px solid #ec9a3a;
+    font-family:Barbieri;
+    color:white;
+}
+
+h2{
+    font-family:Barbieri Inline;
+    color:white;
+    text-align: center;
+
+}
+/*styling information for drop down section on the left*/
+.accordion {
+   border-radius: 20px;
+   border: 2px solid #ec9a3a;
+    background-color: #FFC288;
+    font-family:Barbieri Inline ;
+    color:white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color:#FEA82F
+}
+
+.panel {
+border-radius: 20px;
+border: 2px solid #ec9a3a;
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  font-family:Barbieri Inline ;
+  color:#FEA82F;
+  width:47.2%;
+}
