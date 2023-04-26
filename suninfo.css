@@ -1,0 +1,334 @@
+/* css style sheet for my Responsive Shell (Final Exam)*/ 	
+
+/* this page is for information relating to sunscreen selection based on skin type*/ 
+
+
+@media screen  and (min-width:350px){
+.container1{
+    position:absolute;
+    top:490px;
+    min-height:300px;
+    width: 100%;
+   background-color:#414833;
+   right:0px;
+   text-align: center;
+   color:#black;
+   font-family: Miller Display Bold;
+   font-size:50px;
+}
+  
+.container2{
+    top:0px;
+    position:relative; 
+    min-height:670px;
+    width: 100%;
+    background-color: none;
+    font-family: Miller Display Bold;
+    color:#faf0d9;
+    text-align: center;
+    font-size:10px;
+    left:0px;
+}
+
+.container3{
+    position:relative;
+    min-height:70px;
+    width:100%;
+    background-color:black;
+    top:115px;
+    left:0px;
+    font-family: Miller Display Bold;
+    color:#b6ad90;
+    text-align: center;
+    font-size:40px;
+}
+
+.container4{
+    position::relative;
+    min-height:90px;
+    width: 100%;
+    bottom:70px;
+    left:0px;
+    color: #110D01;
+    font-family: Miller Display Bold;
+    background-color:#606c38;
+    text-align: right;
+    font-size:20px;
+
+}
+
+.container5{
+    position::relative;
+    min-height:30px;
+    width: 100%;
+    bottom:-40px;
+    right:0px;
+    color: #110D01;
+    font-family: Miller Display Bold;
+    background-color:#414833;
+    text-align: center;
+    font-size:30px;
+
+}
+.accordion {
+    background-color: #a4ac86;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+   min-height:30px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: Miller Display Bold;
+    text-decoration: underline;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #656d4a;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #b6ad90;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: Miller Display Bold;
+    font-size: 15px;
+    text-align: left;
+    
+  }
+
+  .container6{
+    position::relative;
+    min-height:30px;
+    width: 100%;
+    bottom:-40px;
+    right:0px;
+    color: #faf0d9;
+    font-family: Miller Display Bold;
+    background-color:black;
+    text-align: center;
+    font-size:30px;
+
+  }
+
+
+
+  .container7{
+    position::relative;
+    min-height:30px;
+    width: 100%;
+    bottom:-950px;
+    left:0px;
+    color: #faf0d9;
+    font-family: Miller Display Bold;
+    background-color:black;
+    text-align: center;
+    font-size:30px;
+
+  }
+
+  h3{
+    display:block
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color:#606c38;
+    border-radius: 10px;
+    border-color:none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family:Miller Display Bold;
+    height:100px;
+    width: 100%;
+    margin-left:120px;
+}
+input, label {
+    font-size: 20px;
+    font-family:Miller Display Bold;
+    color: white;
+    background-color:#606c38;
+    text-align: left;
+}
+
+.button{
+    background-color:none;
+    border-radius: 10px;
+    padding: 15px 32px;
+    border:none;
+    font-family:Miller Display Bold;
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1100px){
+
+.container1{
+    position:absolute;
+    top:0px;
+    height:480px;
+    width: 53%;
+   background-color:#414833;
+   right:0px;
+   text-align: right;
+   color:#black;
+   font-family: Miller Display Bold;
+   font-size:100px;
+}
+  
+.container2{
+    top:0px;
+    position:absolute; 
+    height:480px;
+    width:680px;
+    background-color: #110D01;
+    font-family: Miller Display Bold;
+    color:#faf0d9;
+    text-align: left;
+    font-size:120px;
+    left:0px;
+}
+
+.container3{
+    position:absolute;
+    height:200px;
+    width:100%;
+    background-color:black;
+    top:480px;
+    left:0px;
+    font-family: Miller Display Bold;
+    color:#b6ad90;
+    text-align: center;
+    font-size:40px;
+}
+
+.container4{
+    position:absolute;
+    height:600px;
+    width:50%;
+    top:680px;
+    left:0px;
+    color: #110D01;
+    font-family: Miller Display Bold;
+    background-color:#606c38;
+    text-align: right;
+    font-size:60px;
+
+}
+
+.container5{
+    position:absolute;
+    height:600px;
+    width:50%;
+    top:680px;
+    right:0px;
+    color: #110D01;
+    font-family: Miller Display Bold;
+    background-color:#414833;
+    text-align: center;
+    font-size:30px;
+
+}
+.accordion {
+    background-color: #a4ac86;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height:70px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: Miller Display Bold;
+    text-decoration: underline;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #656d4a;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #b6ad90;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: Miller Display Bold;
+    font-size: 15px;
+    text-align: left;
+    
+  }
+
+  .container6{
+    position:absolute;
+    height:600px;
+    width:50%;
+    top:1240px;
+    right:0px;
+    color: #faf0d9;
+    font-family: Miller Display Bold;
+    background-color:black;
+    text-align: center;
+    font-size:30px;
+
+  }
+
+
+
+  .container7{
+    position:absolute;
+    height:600px;
+    width:50%;
+    top:1240px;
+    left:0px;
+    color: #faf0d9;
+    font-family: Miller Display Bold;
+    background-color:black;
+    text-align: center;
+    font-size:30px;
+
+  }
+
+  h3{
+    display:block
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color:#606c38;
+    border-radius: 10px;
+    border-color:none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family:Miller Display Bold;
+    height:100px;
+    width:300px;
+    margin-left:120px;
+}
+input, label {
+    font-size: 20px;
+    font-family:Miller Display Bold;
+    color: white;
+    background-color:#606c38;
+    text-align: left;
+}
+
+.button{
+    background-color:none;
+    border-radius: 10px;
+    padding: 15px 32px;
+    border:none;
+}
+
+}

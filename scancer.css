@@ -1,0 +1,251 @@
+/* css style sheet for my Responsive Shell (Final Exam)*/ 	
+/* css style sheet about skin cancer)*/ 	
+
+@media screen  and (min-width:350px){
+.container1{
+    position:relative;
+    top:0px;
+    height:10px;
+    width: 100%;
+   background-color:#fefae0;
+   right:0px;
+}
+  
+.container2{
+    top:400px;
+    position:absolute; 
+    min-height:30px;
+    width:100%;
+    background-color: #22223b;
+    font-family: Miller Display Bold;
+    color:#f2e9e4;
+    text-align: center;
+    font-size:30px;
+    left:0px;
+}
+
+.container3{
+    position:relative;
+    min-height:50px;
+    width:100%;
+    background-color:#4a4e69;
+    top:582px;
+    left:0px;
+    font-family: Miller Display Bold;
+    color:#f2e9e4;
+    text-align: center;
+    font-size:30px;
+}
+
+.container4{
+    position:relative;
+    min-height:30px;
+    width:100%;
+    top:555px;
+    right:0px;
+    color: #110D01;
+    font-family: Miller Display Bold;
+    background-color:none;
+
+}
+
+.container5{
+    position:relative;
+    min-height:30px;
+    width:100%;
+    top: 490px;
+    left:0px;
+    color: #110D01;
+    font-family: Miller Display Bold;
+    background-color:none;
+}
+
+.container6{
+    position:relative;
+    min-height:30px;
+    width:100%;
+    top:460px;
+    right:0px;
+    color: #f2e9e4;
+    font-family: Miller Display Bold;
+    background-color:#4a4e69;
+    font-size:30px;
+    text-align: center;
+
+}
+
+.container7{
+    position:relative;
+    min-height:30px;
+    width:100%;
+    top:435px;
+    right:0px;
+    font-size:30px;
+    text-align: center;
+    background-color: #22223b;
+    font-family: Miller Display Bold;
+    color:#f2e9e4;
+
+}
+
+.container8{
+    position:relative;
+    min-height:30px;
+    width:100%;
+    top:410px;
+    left:0px;
+    font-family: Miller Display Bold;
+    background-color:#4a4e69;
+    font-size:30px;
+    text-align: center;
+    color: #f2e9e4;
+  
+}
+
+
+input, label {
+    font-size: 40px;
+    font-family:Miller Display Bold;
+    color: #f2e9e4;
+    background-color:none;
+    text-align: left;
+    
+}
+
+.button{
+    
+    background-color:none;
+    border-radius: 10px;
+    padding: 15px 32px;
+    border:none;
+    font-family:Miller Display Bold;
+    text-align: left;
+   
+}
+}
+
+
+/* css style sheet for my Responsive Shell (Final Exam)*/ 	
+
+@media screen and (min-width:1100px){
+    .container1{
+        position:absolute;
+        top:0px;
+        height:450px;
+        width: 100%;
+       background-color:#fefae0;
+       right:0px;
+    }
+      
+    .container2{
+        top:450px;
+        position:absolute; 
+        height:280px;
+        width:100%;
+        background-color: #22223b;
+        font-family: Miller Display Bold;
+        color:#f2e9e4;
+        text-align: center;
+        font-size:40px;
+        left:0px;
+    }
+    
+    .container3{
+        position:absolute;
+        height:450px;
+        width:50%;
+        background-color:#4a4e69;
+        top:730px;
+        left:0px;
+        font-family: Miller Display Bold;
+        color:#f2e9e4;
+        text-align: center;
+        font-size:50px;
+    }
+    
+    .container4{
+        position:absolute;
+        height:450px;
+        width:50%;
+        top:730px;
+        right:0px;
+        color: #110D01;
+        font-family: Miller Display Bold;
+        background-color:none;
+    
+    }
+    
+    .container5{
+        position:absolute;
+        height:650px;
+        width:50%;
+        top: 1180px;
+        left:0px;
+        color: #110D01;
+        font-family: Miller Display Bold;
+        background-color:none;
+    }
+    
+    .container6{
+        position:absolute;
+        height:650px;
+        width:50%;
+        top:1180px;
+        right:0px;
+        color: #f2e9e4;
+        font-family: Miller Display Bold;
+        background-color:#4a4e69;
+        font-size:50px;
+        text-align: center;
+    
+    }
+    
+    .container7{
+        position:absolute;
+        height:620px;
+        width:50%;
+        top:1830px;
+        right:0px;
+        font-size:50px;
+        text-align: center;
+        background-color: #22223b;
+        font-family: Miller Display Bold;
+        color:#f2e9e4;
+    
+    }
+    
+    .container8{
+        position:absolute;
+        height:620px;
+        width:50%;
+        top: 1830px;
+        left:0px;
+        font-family: Miller Display Bold;
+        background-color:#4a4e69;
+        font-size:50px;
+        text-align: center;
+        color: #f2e9e4;
+      
+    }
+    
+    
+    input, label {
+        font-size: 40px;
+        font-family:Miller Display Bold;
+        color: #f2e9e4;
+        background-color:none;
+        text-align: left;
+        
+    }
+    
+    .button{
+        
+        background-color:none;
+        border-radius: 10px;
+        padding: 15px 32px;
+        border:none;
+        font-family:Miller Display Bold;
+        text-align: left;
+       
+    }
+}

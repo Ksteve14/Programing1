@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Sunscreen for Your Skin Type </title>
+<link rel="stylesheet" type="text/css" href="suninfo.css">
+</head>
+<body>
+
+<div class="container1">
+    <p>Finding the Perfect Match</P>
+</div>
+
+<div class="container2">
+    <img src="heart.jpeg" height="480px" width="680px"></src>
+</div>
+
+<div class="container3">
+    <br>
+    <p>Learn How to Select the Right Sunscreen Based on Your Skin Type</p>
+    
+</div>
+
+<div class="container5">
+<br>
+<br>
+<br>
+<h1> Oily? Dry? Sensitive?</h1>
+<h3>Click on the Tabs to the Left to Learn How to Pick the Right Sunscreen Based on Your Skin Type</h3>
+</div>
+
+<div class="container4">
+<!--the function called in the Javascript will come from this container-->
+<!--the JavaScript to create an accordion was learned from W3Schools. Because of the code structure, the function won't be called unless it is placed at the bottom of the HTML rather than insidee the head-->
+    <button class="accordion">Oily</button>
+    <div class="panel">
+    <p>To reduce breakouts from oily skin, look for products that contain 'non-comedogenic' ingredients which means they won't clog your pores. Common comedogenics include olive oil, argan oil, coconut oil, and soybean oil</p>
+    <p>Choose a sunscreen that isn't oil based, look for products that have gel or water-based formulas and have a matte finish. Sunscreen contains high penetration filters to block out UVA and UVB rays. Although this protection is important, it can also irritate the skin and lead to breakouts. Some brands of sunscreen offer lower penetratition filters that are lighter on the skin while still offering protection.</p>
+    </div>
+
+    <button class="accordion">Dry</button>
+    <div class="panel">
+    <p>Hydration is key for protecting and nourishing dry skin. On the back label of the sunscreen bottle, look for ingredients like hyaluronic acid, ceramides, and glycerin as they help lock in moisture.</p>
+    <p>If you can't find sunscreen with those ingredients, any ordinary sunscreen will do as long as you apply a regular moisturizer to your skin first. </p>
+    </div>
+
+
+    <button class="accordion">Sensitive</button>
+    <div class="panel">
+    <p>Avoid sunscreens that are full of fragrances, preservatives, or alcohol as these irritate the skin. Be careful, the majority of sunscreens include the chemical Para-Aminobenzoic Acid (PABA) which protects from harsh UVB rays. Studies have shown that this chemical can cause allergic reactions and in extreme cases, damage human DNA. </p>
+    <p> Select sunscreens that are mineral-based with titanium dioxide and zinc oxide. These minerals are especially helpful to those that suffer from eczema or rosacea.</p>
+    </div>
+
+    <button class="accordion">Dark Complexion</button>
+    <div class="panel">
+    <p>Don't use mineral-based sunscreen as they tend to leave the skin looking gray and ashy. Try to use a non-comedogenic spray or tinted lotion for sun protection.</p>
+    <p>Although darker skin complexions naturally produce SPF (up to 13), it's advised to still apply sunscreen as the development of melanoma is possible.</p>
+    </div>
+
+    <button class="accordion">Fair Complexion</button>
+    <div class="panel">
+    <p>For someone with fair skin, it's recommended to use a minimum SPF of 50 and try to limit your time out in the sun. Although sprayable sunscreen is just as effective as a lotion or stick, it's difficult to see if it's been applied to the body evenly. To reduce chances of uneven sunburns, a lotion is best.</p>
+    <p>If you have fair skin and burn easily, don't over exfoliate! Exfoliation removes the top layer of your skin which increases your chances of burning. If you have recently exfoliated, you may need to use a stronger SPF or reapply your sunscreen more frequently.</p>
+    </div>
+</div>
+
+
+<div class="container6">
+        <p>Best Products for Your Skin Type</p>
+
+        <p id="products">
+        <input type="button" onclick="Dark.writesunProducts()" value="Dark Complexion" name="sunProducts" />
+        <input type="button" onclick="Fair.writesunProducts();" value="Fair Complexion" name="sunProducts" />
+        <input type="button" onclick="Dry.writesunProducts();" value="Dry Skin" name="sunProducts" />
+        <input type="button" onclick="Sensitive.writesunProducts();" value="Sensitive Skin" name="sunProducts" />
+        <input type="button" onclick="Oily.writesunProducts();" value="Oily Skin" name="sunProducts" />
+
+</div>
+
+
+<div class="container7">
+    <img src="shopping.jpeg" height="600px" width="100%"></src>
+
+</div>
+<script type="text/javascript">
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+
+     /* this is my constructor example that features different price ranges of sunscreens to purchase */
+     function sunProducts(inexpensive, average, luxury) {
+       this.inex = inexpensive;
+       this.av = average;
+       this.lux = luxury;
+
+       this.writesunProducts = function () {
+
+
+          var str = "For an inexpensive sunscreen, try out " + this.inex + " . " + " If you want a higher quality product, we recommend  " + this.av + ". For a luxury sunscreen, " + this.lux + " is best";
+
+          writeText(str, "products");
+       }
+    }
+
+    /*when you click on the button, this function will appear. Each button features three types of sunscreen*/
+
+
+    /* This will write some text out to an html element. The text to write and the id of the html
+element to write to are parameters.
+*/
+    function writeText(txt, destination) {
+       document.getElementById(destination).innerHTML = txt;
+    }
+
+    /* sunscreen variables */
+    var Dark = new sunProducts("Black Girl Sunscreen", "Urban Skin Rx SheerGlow Even Tone", "Fenty Skin Hydra Vizor Invisible Moisturizer");
+    var Fair = new sunProducts("Skin Aqua Tone Up UV Essence", "Bareminerals Complexion Rescue", "Colorescience Total Protection Face Shield ");
+    var Dry = new sunProducts("Beauty of Joseon Relief Sun Rice", "Coola Classic Face Organic Sunscreen", "Tatcha The Silk Sunscreen: Broad Spectrum ");
+    var Sensitive= new sunProducts("Vanicream Sunscreen SPF 35 Sport", "EltaMD UV Clear Face Sunscreen", "EltaMD UV Clear Face Sunscreen");
+    var Oily= new sunProducts("Supergoop! Unseen Sunscreen", "La Roche-Posay Anthelios Tinted Sunscreen", "Jan Marini Physical Protectant Broad Spectrum");
+ </script>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* css style sheet for my Responsive Shell (Final Exam)*/ 	
+
+
+/*the header and content boxes will be in shades of orange*/
+@media screen  and (min-width:350px){
+.container1{
+    position:relative;
+    top:0px;
+    height:5%;
+    width: 100%;
+   background-color:none;
+   right:0px;
+}
+  
+.container2{
+    top:-80px;
+    position:relative; 
+    min-height:20px;
+    width:100%;
+    background-color: #110D01;
+    font-family: Miller Display Bold;
+    color:#faf0d9;
+    text-align: left;
+    font-size:80px;
+    left:0px;
+}
+
+.container3{
+    position:relative;
+    min-height:10px;
+    width:100%;
+    background-color:#332829;
+    bottom:200px;
+    left:0px;
+}
+
+.container4{
+    position:relative;
+    min-height:30px;
+    width:100%;
+    bottom:150px;
+    right:0px;
+    color: #110D01;
+    font-family: Miller Display Bold;
+    background-color:#faf0d9;
+    text-align: right;
+    font-size:60px;
+
+}
+
+.row {
+    display: flex;
+  }
+  
+  .col {
+      margin: 30px;
+      min-height:30px;
+      width:390px;
+      background-color:	#a08066;
+      border: 2px solid #110D01;
+      font-size:20px;
+      text-align: left;
+      font-family: Miller Display Bold;
+      color:#110D01;
+  }
+
+
+  
+ 
+
+  .links{
+    text-align: center;
+    font-family: Miller Display Bold;
+    background-color: none;
+}
+  
+}
+
+@media screen and (min-width:1100px){
+    .container1{
+        position:absolute;
+        top:0px;
+        height:652px;
+        width: 860px;
+       background-color:none;
+       right:0px;
+    }
+      
+    .container2{
+        top:0px;
+        position:absolute; 
+        height:652px;
+        width:650px;
+        background-color: #110D01;
+        font-family: Miller Display Bold;
+        color:#faf0d9;
+        text-align: left;
+        font-size:120px;
+        left:0px;
+    }
+    
+    .container3{
+        position:absolute;
+        height:470px;
+        width:60%;
+        background-color:#332829;
+        bottom:-300px;
+        left:0px;
+    }
+    
+    .container4{
+        position:absolute;
+        height:470px;
+        width:40%;
+        bottom:-300px;
+        right:0px;
+        color: #110D01;
+        font-family: Miller Display Bold;
+        background-color:#faf0d9;
+        text-align: right;
+        font-size:60px;
+    
+    }
+    
+    .row {
+        display: flex;
+      }
+      
+      .col {
+          margin: 30px;
+          height: 380px;
+          width:390px;
+          background-color:	#a08066;
+          border: 2px solid #110D01;
+          font-size:20px;
+          text-align: left;
+          font-family: Miller Display Bold;
+          color:#110D01;
+      }
+    
+    
+      
+     
+    
+      .links{
+        text-align: center;
+        font-family: Miller Display Bold;
+        background-color: none;
+    }
+      
+    }

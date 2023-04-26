@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Skin Cancer </title>
+<link rel="stylesheet" type="text/css" href="scancer.css">
+<script type="text/javascript">
+
+		function checkSymptoms() {
+			// the function locates the symptoms selected in the body portion of the html
+			var symptoms = document.getElementsByName("symptom");
+			var selectedSymptoms = [];
+            // Loop through the symptoms array and check if the selected symptom is present
+			for (var i = 0; i < symptoms.length; i++) {
+				if (symptoms[i].checked) {
+					selectedSymptoms.push(symptoms[i].value);
+				}
+			}
+
+			// the function will check if any symptoms are selected
+			if (selectedSymptoms.length === 0) {
+				alert("Please select at least one symptom.");
+				return;
+			}
+
+			// the alert will generate a message with the selected symptoms
+			var message = "You selected: \n\n";
+
+			for (var i = 0; i < selectedSymptoms.length; i++) {
+				message += "- " + selectedSymptoms[i] + "\n";
+			}
+
+			message += "\nBased on your selection, you may have a malignant mole that needs to be evaluated by a medical professional.";
+
+			alert(message);
+		}
+  
+    </script>
+</head>
+<body>
+       <!--This container includes an image related to a skin routine at a dermatologist-->
+<div class="container1">
+    <img src="skinexam.jpeg" height="450px" width="100%"></src>
+</div>
+
+
+       <!--This container includes the title-->
+<div class="container2">
+<H1>Skin Cancer</H1>
+<H3>Know the Facts</H3>
+</div>
+
+<!--facts relating to skin cancer from the Skin Cancer Foundation Website-->
+<div class="container3">
+<p>At least one in five Americans will develop skin cancer by the age of 70</p>
+<p>-Skin Cancer Foundation</p>
+
+</div>
+
+
+<div class="container4">
+    <img src="girls.jpeg" height="450px" width="100%"></src>
+</div>
+
+<div class="container5">
+    <img src="tanning.jpeg" height="650px" width="100%"></src>
+</div>
+
+<div class="container6">
+    <p>Indoor tanning devices can emit UV radiation in amounts 10 to 15 times higher than the sun at its peak intensity</p>
+    <p>-Skin Cancer Foundation</p>
+</div>
+
+<!--container featuers a brief video demonstrating the signs and symptoms of Melanoma-->
+<div class="container7">
+
+    <p>What Does Skin Cancer Look Like?</p>
+    
+    <iframe width="560" height="380" src="https://www.youtube.com/embed/BuuXPFaSh0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </div>
+</div>
+<!--the function called in the Javascript will come from this container-->
+<!--users select symptoms they may be experiencing to see if it can be melanoma-->
+<div class="container8">
+    <p>Signs and Symptoms of Melanoma</p>
+	<form>
+
+        <label>
+			<input type="checkbox" name="symptom" value="An increase in the height of a mole">
+			An increase in the height of a mole
+		</label><br>
+
+		<label>
+			<input type="checkbox" name="symptom" value="A change in the size or shape of a mole">
+			A change in the size or shape of a mole
+		</label><br>
+
+        <label>
+			<input type="checkbox" name="symptom" value="A mole that itches or bleeds">
+			A mole that itches or bleeds
+		</label><br>
+
+		<label>
+			<input type="checkbox" name="symptom" value="Irregular or ragged edges of a mole">
+			Irregular or ragged edges of a mole
+		</label><br>
+
+		<label>
+			<input type="checkbox" name="symptom" value="Multiple colors or shades within a mole">
+			Multiple colors or shades within a mole
+		</label><br>
+
+
+		<button type="button" onclick="checkSymptoms()">Check Symptoms</button>
+	</form>
+    </div>
+
+
+
+</body>
+</html>
